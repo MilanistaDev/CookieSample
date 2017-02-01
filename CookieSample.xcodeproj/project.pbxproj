@@ -13,6 +13,7 @@
 		19CEDED61E41859400010AEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CEDED41E41859400010AEF /* Main.storyboard */; };
 		19CEDED81E41859400010AEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CEDED71E41859400010AEF /* Assets.xcassets */; };
 		19CEDEDB1E41859400010AEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19CEDED91E41859400010AEF /* LaunchScreen.storyboard */; };
+		19CEDEE41E418C3700010AEF /* WebBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CEDEE31E418C3700010AEF /* WebBrowseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		19CEDED71E41859400010AEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19CEDEDA1E41859400010AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19CEDEDC1E41859400010AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19CEDEE21E418C3700010AEF /* WebBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowseViewController.h; sourceTree = "<group>"; };
+		19CEDEE31E418C3700010AEF /* WebBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				19CEDECF1E41859400010AEF /* AppDelegate.m */,
 				19CEDED11E41859400010AEF /* ViewController.h */,
 				19CEDED21E41859400010AEF /* ViewController.m */,
+				19CEDEE21E418C3700010AEF /* WebBrowseViewController.h */,
+				19CEDEE31E418C3700010AEF /* WebBrowseViewController.m */,
 				19CEDED41E41859400010AEF /* Main.storyboard */,
 				19CEDED71E41859400010AEF /* Assets.xcassets */,
 				19CEDED91E41859400010AEF /* LaunchScreen.storyboard */,
@@ -154,6 +159,7 @@
 				19CEDED31E41859400010AEF /* ViewController.m in Sources */,
 				19CEDED01E41859400010AEF /* AppDelegate.m in Sources */,
 				19CEDECD1E41859400010AEF /* main.m in Sources */,
+				19CEDEE41E418C3700010AEF /* WebBrowseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

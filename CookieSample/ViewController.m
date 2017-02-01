@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "WebBrowseViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *firstInstalledDateLabel;
 
 @end
 
@@ -16,9 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDate *date = [defaults objectForKey:@"FirstInstalledDate"];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy/MM/dd HH:mm:ss";
+    self.firstInstalledDateLabel.text = [dateFormatter stringFromDate:date];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"web"]) {
+        WebBrowseViewController *webVC = [segue destinationViewController];
+        webVC.urlStr = @"https://google.com";
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
